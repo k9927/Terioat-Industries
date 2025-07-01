@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   css: {
     postcss: {
+      base: '/Terioat-Industries/',
       plugins: [tailwindcss()],
     },
   }
