@@ -125,10 +125,7 @@ Sent via Terioat Industries website contact form
             Ready to discuss your precision engineering needs? We're here to help bring your projects to life with over 30 years of manufacturing excellence.
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-sm">
-            <div className="flex items-center space-x-2">
-              <Award className="w-5 h-5" />
-              <span>ISO Certified</span>
-            </div>
+            
             <div className="flex items-center space-x-2">
               <Star className="w-5 h-5" />
               <span>Premium Quality</span>

@@ -125,10 +125,6 @@ export default function ProductsPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-sm">
             <div className="flex items-center space-x-2">
-              <Award className="w-5 h-5" />
-              <span>ISO Certified</span>
-            </div>
-            <div className="flex items-center space-x-2">
               <Star className="w-5 h-5" />
               <span>Premium Quality</span>
             </div>
@@ -280,7 +276,7 @@ export default function ProductsPage() {
                     <img
                       src={product.img}
                       alt={product.name}
-                      className={`object-cover transition-transform duration-500 group-hover:scale-105 ${
+                      className={`object-cover transition-transform duration-500 group-hover:scale-105 aspect-square ${
                         viewMode === 'list' ? 'w-full h-full' : 'w-full h-64'
                       }`}
                     />
