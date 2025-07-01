@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,35 +28,35 @@ function Navbar() {
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-1">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="px-4 py-2 text-gray-700 font-medium rounded-lg transition-all duration-200 hover:bg-blue-50 hover:text-blue-600 relative group"
           >
             Home
             <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-3/4 group-hover:left-1/8"></span>
-          </a>
-          <a
-            href="/about"
+          </Link>
+          <Link
+            to="/about"
             className="px-4 py-2 text-gray-700 font-medium rounded-lg transition-all duration-200 hover:bg-blue-50 hover:text-blue-600 relative group"
           >
             About
             <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-3/4 group-hover:left-1/8"></span>
-          </a>
-          <a
-            href="/products"
+          </Link>
+          <Link
+            to="/products"
             className="px-4 py-2 text-gray-700 font-medium rounded-lg transition-all duration-200 hover:bg-blue-50 hover:text-blue-600 relative group"
           >
             Products
             <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-3/4 group-hover:left-1/8"></span>
-          </a>
-          <a
-            href="/contact"
+          </Link>
+          <Link
+            to="/contact"
             className="px-4 py-2 text-gray-700 font-medium rounded-lg transition-all duration-200 hover:bg-blue-50 hover:text-blue-600 relative group"
           >
             Contact
             <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-3/4 group-hover:left-1/8"></span>
-          </a>
-          
+          </Link>
+
           {/* CTA Button */}
           <div className="ml-4 pl-4 border-l border-gray-200">
             <a
@@ -106,35 +107,35 @@ function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
           <div className="px-6 py-4 space-y-2">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="block px-4 py-3 text-gray-700 font-medium rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
-            </a>
-            <a
-              href="/about"
+            </Link>
+            <Link
+              to="/about"
               className="block px-4 py-3 text-gray-700 font-medium rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               About
-            </a>
-            <a
-              href="/products"
+            </Link>
+            <Link
+              to="/products"
               className="block px-4 py-3 text-gray-700 font-medium rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Products
-            </a>
-            <a
-              href="/contact"
+            </Link>
+            <Link
+              to="/contact"
               className="block px-4 py-3 text-gray-700 font-medium rounded-lg hover:bg-blue-600 hover:text-blue-600 transition-all duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
-            </a>
-            
+            </Link>
+
             {/* Mobile CTA */}
             <div className="pt-4 border-t border-gray-200">
               <a
