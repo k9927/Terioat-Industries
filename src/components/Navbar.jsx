@@ -10,7 +10,7 @@ function Navbar() {
         <div className="flex items-center space-x-3">
           <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl shadow-md">
             <img
-              src="Screenshot 2025-06-28 213846.png"
+              src="/images/logo.png"
               alt="Logo"
               className="h-8 w-8 object-contain"
             />
