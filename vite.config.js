@@ -1,13 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from 'tailwindcss'
 
 export default defineConfig({
-  plugins: [react()],
-  css: {
-    postcss: {
-      base: '/Terioat-Industries/',
-      plugins: [tailwindcss()],
-    },
-  }
+  base: '/Terioat-Industries/',  // ✅ Required for GitHub Pages
+  plugins: [react()]
 })
